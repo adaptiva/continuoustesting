@@ -1,0 +1,86 @@
+Introduction
+This short book aims to help testers leverage work done by the rest of the team to provide them with more tooling, more help with tough technical tasks, and more time to test. Where those practices don’t exist, the aim is to give the tester the arguments to provoke change within their respective teams or organisations. It is primarily focused on build web and mobile based solutions in agile and high frequency delivery environments.
+
+In 2016 I spoke on the subject of DevOps and how the practices and mechanisms associated with adopting DevOps could help testers greatly.  Why did I do this particular talk? Its quite simple, I have developed a fairly strong gut feeling that many testers don’t do too much testing, with the main reason being that they are busy doing other development activities. Over the years I've spent a good deal of time building test teams, mentoring testers, talking to testers, and of course, testing. During this time I have always noted that testers don't actually do as much testing as perhaps they could. Why is this?
+
+The easiest way to understand this is by actually taking on the role of a tester. As a tester, one of the first things you will notice is that you spend a lot of time mitigating delays to getting your actual testing done. These delays are non intentional pauses to your daily activities caused by things such as:
+
+	- Waiting for deployment of code into a test environment
+	- Unavailable test environments
+	- Configuration issues
+	- Debugging failing automation tests
+	- Broken builds
+	- Project management
+	- Agile shenanigans
+	
+Picking through those delays, it becomes apparent that a lot of them are caused by technical dysfunction within the team or organisation you are working in. By technical dysfunction I refer chiefly to the use of non optimised practices for environment management, code deployment, code build, test automation, server creation, and configuration management. 
+
+Getting back to the conference that I spoke at in 2016 about DevOps, to help validate my point regarding time and effort exerted on testing I ran a small hands up survey. To the question "how many people spend 100% of their time testing?" only one out of a roomful of about 100 testers  raised their hands. To the question "how many people spend less than 50% of their time testing" given later, about 40% answered yes. Not greatly scientific, but at least confirms in part my gut feeling. Equally, in the 2014 survey  carried out by IBM in conjunction with uTest, The Future of Testing: What do testers spend their time on, data shows that  36% spend 50% to 100% of their work week not testing. That’s quite a considerable amount.
+
+When digging into these numbers, much of the time is wasted on mitigating delays. With primary causes being related technical dysfunction.
+
+I believe that in order for the tester to be truly optimal, and bring the maximum value they can to the team, it is very much dependent on the general technical maturity of the team.
+
+Teams that can take the pain out of exercising routine tasks allow time and space for everyone to succeed, not just testers. 
+
+DevOps Adoption
+The term DevOps, criticised by some as a hyped up marketing term, and embraced by others as a route towards technical excellence and efficiency many of us want to see in our teams, essentially describes the unification of the development and operation functional spaces with the aim to remove the silo activities and thinking that typically complicate the flow of software towards production.
+
+Many organisations adopt a mechanistic structure that resembles a bureaucracy with divisions set up as functional silos. This structure exists to facilitate bureaucratic operations as opposed to encouraging innovation, and is one of the main blockers to agile adoption in many organisations. This structure greatly hinders collaboration between tightly coupled or interdependent functions. In this case operations and development. The overhead of process and procedure needed to keep mechanistic organisations moving confounds the problem by the easy disallowance of waivers or helpful caveats that could in turn ease collaboration problems.
+
+However, in our increasingly competitive world many organisations, whether commercial or not see a strong need to be ahead of their game in terms of their offerings, and how quick they can make those offerings available. This competitiveness or need usually manifests itself in the ability to create new products quickly, or to make improvements quickly. This desire to innovate is beginning to cause some slack around typical heavy weight process, procedure, and bureaucracy that holds many organisations together. This desire is where the initial DevOps requirement came from. 
+
+Traditional development organisations, and this includes those engaged in modern delivery patterns such as agile, would, at the very best, pass software delivery responsibility from development to operations. This handover period, even in this best case scenario, creates room for error. An operations team would typically not know the inner workings of an application, how it should be deployed in the most optimal way, and how to identify configuration or deployment errors once the software has been placed into production. They would have no idea of how to monitor effectively, or how to build the correct target deployment environments. This is not to say that these two silos have never spoken or will never speak. They do, and quite a lot. An operations team is well aware of the need to know what type of environment is required, and how it will operate, how to deploy, etc. Endless meetings and sign offs for even the smallest development organisations are required to identify requirements, purchase or provision of infrastructure. These bureaucratic actions slow down the delivery process. When you scale up the delivery workflow to include phases such as test, security, or business acceptance, each one of these phases is usually tied to one or more departments, each operating their own budget, each needing there own interactions with operations teams, you can quickly see the impact of these interaction points, which is quite simply, time added to the software delivery lifecycle. The software takes longer to reach its intended audience, the scope for quick feedback is reduced meaning that issues whether functional or technical cant be acted upon very quickly, in turn leaves customers with potentially worthless software. 
+
+Development philosophies such as agile have gone a long way to reduce this problem through organisational restructuring, and leaner process, but a distinct focus on technical improvements has not been tightly coupled with this movement. Therefore, many agile organisations, still struggle to deliver with the expectations given to us by those that promote agile. Our development teams may be highly optimised, but the larger delivery organisation is usually not. 
+
+This sub-optimisation occurs for many reasons. Traditional organisations, with rigid test processes, and heavy project management  encourage silo thinking. 
+
+Test organisations have typically been distrustful of the produce of development teams due to what seems to be the inability of development teams to test software in an integrated and independent way, on a platform that resembles production. As a result, test phases appear to try and prove or disprove this sense of distrust. Each phase adding its weight and burden to the entire delivery lifecycle.
+
+Operations teams are then distrustful of both test and development organisations and will conduct their own experiments on the software. Adding further overhead to the process, and increasing the opportunity to reject software.
+
+These silos work against each other. 
+
+DevOps whether seen as a culture, practice, or movement emerged from these frustrations. Coupled with modern virtualisation techniques, the increased ability to quickly produce environments, and script configuration of virtually anything there was now a common ground that could be shared, largely based around the operational aspect of software development. 
+
+With the requirement of faster and efficient delivery, these tools and practices began to gain traction, first as a way to optimise development teams, but then as a way to share infrastructure, configuration, and even brain power across different factions of an organisation. 
+
+Its about breaking down silos.
+
+DevOps as a culture 
+Being involved in DevOps means being strongly aligned to principles such as those described in the agile manifesto.
+
+Primarily its about unifying people around a set of common goals and practices to move thinking beyond the code checking, which is where the agile manifesto tends to falter.
+
+
+DevOps as a set of practices
+In its simplest a most digestible form, DevOps can be seen as a set of practices, but that’s not to say there isnt a huge cultural aspect to engaging devops in any organisation.
+
+These practices are constructed of many that we already familiar with, and others which perhaps have not fallen directly into the development realm for most.
+
+This table describes these practices two key concepts that underlies all of these practices is automation and toolchain thinking. 
+
+Automation of repetitive configuration heavy tasks such as code compilation, deployments, and server construction can reduce the risk of misconfiguration massively, whilst at the same time reduce the time to completion of typically labour and time intensive tasks. 
+
+The concept of a tool chain means pulling together all the practices and mechanisms used to develop and deliver code into a recognisable set of tools that are linked together either through input and output activities or conceptually. Tool chain thinking allows us to correlate the delivery pipeline activities with tangible tools to do specific jobs.
+
+|Practice	|Description
+|___
+|Continuous Integration	|A mechanism that builds code upon committing to a shared code repository. This allows |                              changes from multiple sources to be built in unison with the intention to uncovering integration issues through, amongst others, the use of automatic checks and static code analysis . This is a continuous mechanism that will happen either periodically, or whenever a commit is detected.
+Continuous Deployment	Code that has passed a successful continuous integration phase can be automatically deployed to any location. This is a useful method of testing deployment mechanisms in conjunction with newly built code, newly generated servers, and newly applied configuration. Continuous Deployment is not necessarily the best option for all parts of a delivery pipeline, many organisations choose to place manual intervention points to carry the necessary checks and balances to gain confidence to promote new builds further along a pipeline, eventually into production.
+Configuration Management	Every asset involved in the software delivery process and the final operational environment  is placed under configuration management. Both the code, data structures and the infrastructure that it runs on are managed in someone by a configuration management tool. This allows consistency across all aspects of a software environment.
+Infrastructure as code 	Where possible you should be able to generate any part of your infrastructure through tooling. This tooling will typically involve configuration files, scripts, OS/container images, proprietary software, and third party software. Combined these tools should allow you to automatically produce servers, load balancers, networks, application containers, etc. 
+Automatic Verification	Automated checks of known outcomes should be included all throughout a delivery pipeline. Automatic verification should occur on code functionality, code quality, deployment mechanisms, contracts and boundaries with external dependencies, infrastructure generation scripts, software releases, etc. Any failure should halt a delivery pipeline, triggering manual intervention or automatic role back depending on the gravity of failure.
+Continuous Monitoring	A good, easily accessible event & error monitoring system is essential for anyone releasing software. A good, well structured monitoring strategy can act as an early warning system giving essential feedback during and after release times.
+
+Developers have operations mentality
+Operations have a developer mentality
+
+Books such as Continuous Delivery that advocate the use of devops practices to achieve ability to deploy software wherever, and whenever have helped raise awareness of how ineffective many organisations are at delivering software, despite their agile credentials, and also how to solve delivery problems through technical discipline and excellence. 
+
+The pace of adoption is relentless, with specialist devops oganisations such as a continuo being becoming a global force it really does demonstrate the demand for a devops way of life.
+
+The following section takes a look at typical devops practices, looking at the problems they solve, and how particular practices can be leveraged by testers or test organisations. 
+
+
